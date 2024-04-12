@@ -1,5 +1,8 @@
 ﻿@page "/"
 
+@inject IJSRuntime ijsRutine;
+
+
 <PageTitle>Home</PageTitle>
 
 <h1>Hello, @test!</h1>
@@ -7,7 +10,12 @@
 Welcome to your new app.
 
 <script>
-    alert("Hola Mundo")
+
+    function jsFuncion() 
+    {
+        alert("Hola Mundo")
+    }
+    
 </script>
 
 @code
